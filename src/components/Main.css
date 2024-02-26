@@ -1,0 +1,5 @@
+.main-content {
+    padding: 20px;
+    flex: 1; /* Allows the main content to grow and fill available space, useful for flexbox layouts */
+  }
+  

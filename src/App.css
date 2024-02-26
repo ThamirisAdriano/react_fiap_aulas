@@ -22,3 +22,13 @@ body {
     padding: 10px; /* Reduz o espaçamento dentro do conteúdo principal */
   }
 }
+
+@media (max-width: 768px) {
+  .header, .footer {
+    padding: 10px 0;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}

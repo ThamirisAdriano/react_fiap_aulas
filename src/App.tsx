@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import Header from './components/Header'; // Ajuste o caminho conforme necessário
+import Main from './components/Main'; // Ajuste o caminho conforme necessário
+import Footer from './components/Footer'; // Ajuste o caminho conforme necessário
 import TaskList from './TaskList';
 import AddTask from './AddTask';
-
 
 interface Task {
   id: number;
@@ -16,11 +18,15 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app-container"> {/* Pode adicionar estilos ou classes conforme necessário */}
+    <Header />
+    <Main>
       <h1>Lista de Tarefas</h1>
       <AddTask onAddTask={addTask} />
       <TaskList tasks={tasks} />
-    </div>
+    </Main>
+    <Footer />
+  </div>
   );
 }
 
